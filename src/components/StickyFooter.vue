@@ -16,10 +16,23 @@ const defaultOptions = Vue.extend({
   }
 });
 
+function afterHook(to, from,$main) {
+      this.$nextTick(() {
+        setFooter($main, this.$el);
+      });
+}
+
 @Component
 export default class StickyFooter extends defaultOptions {
   mounted() {
-    setFooter(this.main(), this.$el);
+    const $main = this.main();
+    setFooter($main, this.$el);
+    const hook = afterHook.bind(this,null,null,$main)
+    this.$router.afterEach(hook);
+    // may not need this
+    this.$on("hook:destroyed",()=>{
+      this.$router.afterHooks.splice( this.$router.afterHooks.indexOf(hook),1 );
+    })
   }
 }
 
@@ -39,19 +52,16 @@ function getWindowHeight() {
   return windowHeight;
 }
 function setFooter(mainEle, footerEle) {
-  if (document.getElementById) {
-    var windowHeight = getWindowHeight();
-    if (windowHeight > 0) {
-      var contentHeight = mainEle.offsetHeight;
-      var footerElement = footerEle;
-      var footerHeight = footerElement.offsetHeight;
-      if (windowHeight - (contentHeight + footerHeight) >= 0) {
-        footerElement.style.position = "relative";
-        footerElement.style.top =
-          windowHeight - (contentHeight + footerHeight) + "px";
-      } else {
-        footerElement.style.position = "static";
-      }
+  const windowHeight = getWindowHeight();
+  if (windowHeight > 0) {
+    var contentHeight = mainEle.offsetHeight;
+    var footerElement = footerEle;
+    var footerHeight = footerElement.offsetHeight;
+    if (windowHeight - (contentHeight + footerHeight) >= 0) {
+      const top = windowHeight - (contentHeight + footerHeight) + "px";
+      footerElement.style.cssText = `position:relative;top:${top}`;
+    } else {
+      footerElement.style.position = "static";
     }
   }
 }
