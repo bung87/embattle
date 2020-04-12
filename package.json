@@ -17,15 +17,22 @@
   },
   "homepage": "https://github.com/bung87/embattle#readme",
   "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.1.2",
     "vue": "^2.0.0",
     "vue-class-component": "^7.2.3",
     "vue-hot-reload-api": "^2.3.4",
     "vue-router": "^3.1.6"
   },
   "devDependencies": {
+    "@types/react": "^16.9.34",
+    "@types/react-router-dom": "^5.1.4",
     "@vue/component-compiler-utils": "^3.1.2",
+    "autoprefixer": "^9.7.6",
     "parcel": "^1.12.4",
     "parcel-bundler": "^1.12.4",
+    "postcss-modules": "^1.5.0",
     "sass": "^1.26.3",
     "typescript": "^3.8.3",
     "vue-template-compiler": "^2.6.11"

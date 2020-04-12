@@ -1,11 +1,11 @@
 
 # embattle
 
-simple vue demo demonstrate vue slot with **crown layout** , **dual wing layout** and a flexable **sticky footer**
+simple vue,react demo demonstrate react and vue slot with **crown layout** , **dual wing layout** and a flexable **sticky footer**
 
 technics:  
 * script language: typescript
-* framework: vue
+* framework: vue,react
 * bundler: parcel
 * package manager: yarn
 
@@ -13,4 +13,10 @@ notice:setting `.vscode/settings.json` `"vetur.validation.script": false` as vet
 
 ## run  
 
-`yarn exec parcel src/index.html`
+vue version:  
+
+`yarn exec parcel src/vue.html`  
+
+react version:  
+
+`yarn exec parcel src/react.html`
