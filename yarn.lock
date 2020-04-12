@@ -3830,6 +3830,13 @@ parcel-bundler@^1.12.4:
     v8-compile-cache "^2.0.0"
     ws "^5.1.1"
 
+parcel-plugin-psass@^0.0.0:
+  version "0.0.0"
+  resolved "https://registry.npmjs.org/parcel-plugin-psass/-/parcel-plugin-psass-0.0.0.tgz#0a0a26c81e713c0faa709cf5231df67875c38367"
+  integrity sha512-D0l9HgoqoZvaiVVeXLY3iyTIx+KE/J957URZ1h2u0Ln5V/skU5fjehGeXsLek+PqFIsgPIjqkyQTAPx6+7zn7Q==
+  dependencies:
+    parcel-bundler "^1.12.4"
+
 parcel@^1.12.4:
   version "1.12.4"
   resolved "http://r.cnpmjs.org/parcel/download/parcel-1.12.4.tgz#c8136085179c6382e632ca98126093e110be2ac5"
@@ -4279,13 +4286,6 @@ postcss-reduce-transforms@^4.0.2:
     has "^1.0.0"
     postcss "^7.0.0"
     postcss-value-parser "^3.0.0"
-
-postcss-scss@^2.0.0:
-  version "2.0.0"
-  resolved "http://r.cnpmjs.org/postcss-scss/download/postcss-scss-2.0.0.tgz#248b0a28af77ea7b32b1011aba0f738bda27dea1"
-  integrity sha1-JIsKKK936nsysQEaug9zi9on3qE=
-  dependencies:
-    postcss "^7.0.0"
 
 postcss-selector-parser@6.0.2, postcss-selector-parser@^6.0.0, postcss-selector-parser@^6.0.2:
   version "6.0.2"

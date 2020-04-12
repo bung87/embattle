@@ -1,0 +1,13 @@
+.layout-crown {
+    overflow: auto;
+    &> div {
+        position: relative;
+        float: left;
+    }
+    &__main {
+        width: 100%;
+    }
+    &__left {
+        margin-left: -100%;
+    }
+}

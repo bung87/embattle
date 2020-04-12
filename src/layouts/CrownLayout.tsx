@@ -1,6 +1,6 @@
 import { Component } from "react";
 import * as React from "react";
-import styles from './crown_layout.pcss';
+import styles from './crown_layout.scss';
 interface Props {
     left: Node | Element
     right: Node | Element
