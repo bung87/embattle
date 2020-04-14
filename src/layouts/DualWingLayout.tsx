@@ -51,16 +51,16 @@ export default class CrownLayout extends Component<Props> {
         const style = {marginLeft:this.props.layout.left.width,marginRight:this.props.layout.right.width};
         const leftStyle = {width:this.props.layout.left.width,left:`-${this.props.layout.left.width}` }
         const rightStyle = {width:this.props.layout.right.width,right:`-${this.props.layout.right.width}`,marginLeft:`-${this.props.layout.right.width}`}
-        return (<div className={styles["layout-crown"]} style={{height:"900px"}}>
-            <div className={styles["layout-crown__main"]}>
-                <div className="layout-crown__main__inner" style={style}>
+        return (<div className={styles["layout-dual-wing"]} style={{height:"900px"}}>
+            <div className={styles["layout-dual-wing__main"]}>
+                <div className="layout-dual-wing__main__inner" style={style}>
                 {this.props.main}
                 </div>
             </div>
-            <div className={styles["layout-crown__left"]} style={leftStyle}>
+            <div className={styles["layout-dual-wing__left"]} style={leftStyle}>
                 {this.props.left}
             </div>
-            <div className={styles["layout-crown__right"]} style={rightStyle}>
+            <div className={styles["layout-dual-wing__right"]} style={rightStyle}>
                 {this.props.right}
             </div>
         </div>)

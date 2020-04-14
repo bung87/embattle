@@ -66,10 +66,11 @@ class StickyFooter extends Component<Props>{
         super(props);
         this.myRef = React.createRef<any>();
     }
-    adjustFooter(_: any) {
+    adjustFooter() {
         setFooter(this.props.main.current, this.myRef.current);
     }
     componentDidMount() {
+        this.adjustFooter();
         // @ts-ignore
         this.boundListener = this.adjustFooter.bind(this);
         // @ts-ignore

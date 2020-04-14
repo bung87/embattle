@@ -1,20 +1,13 @@
 import { Component } from "react";
 import * as React from "react";
 import DualWingLayout from '../layouts/DualWingLayout';
-
+import layout from './layout'
 export default class DualWingPage extends Component<any> {
     constructor(props:any){
         super(props)
     }
     static defaultProps = {
-        layout:{
-            left:{
-                width:"100px"
-            },
-            right:{
-                width:"220px"
-            }
-        }
+        layout:layout
     };
     render() {
         const main = (<div><p>A paragraph for the main content.</p>

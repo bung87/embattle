@@ -3830,13 +3830,6 @@ parcel-bundler@^1.12.4:
     v8-compile-cache "^2.0.0"
     ws "^5.1.1"
 
-parcel-plugin-psass@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.npmjs.org/parcel-plugin-psass/-/parcel-plugin-psass-0.0.1.tgz#12b0886b23388d0fda7f86b24c0cc5942a2ca47e"
-  integrity sha512-KBVIf/lhMcQAViD4lZhkXZZQDIpyDVUY5PWLhLee1JwQki+qh6jGzLrckMRLe+TtrGdtqtT6QsBQEPB1LSSYSQ==
-  dependencies:
-    parcel-bundler "^1.12.4"
-
 parcel@^1.12.4:
   version "1.12.4"
   resolved "http://r.cnpmjs.org/parcel/download/parcel-1.12.4.tgz#c8136085179c6382e632ca98126093e110be2ac5"
