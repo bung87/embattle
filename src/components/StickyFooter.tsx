@@ -1,5 +1,4 @@
 import React, { Component, RefObject } from "react";
-import { withRouter, RouteComponentProps } from "react-router-dom";
 
 function getWindowHeight() {
     var windowHeight = 0;
@@ -31,7 +30,7 @@ function setFooter(mainEle: HTMLElement, footerEle: HTMLElement) {
         }
     }
 }
-interface Props extends RouteComponentProps{
+interface Props {
     main: RefObject<any>
 }
 // @ts-ignore
@@ -96,4 +95,4 @@ class StickyFooter extends Component<Props>{
     }
 }
 
-export default withRouter(StickyFooter)
+export default StickyFooter
